@@ -22,15 +22,17 @@ public class SteppeBehavior : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+    
+
         if(!steppedOn)
             StartCoroutine(TurnOnAnimation(GetComponent<Renderer>()));
-
+        
         steppedOn = true;
     }
 
     IEnumerator TurnOnAnimation(Renderer rend)
     {
-        
+        Debug.Log("Steppedon");
         float elapsedTime = 0;
 
         while (elapsedTime < blendDuration)
@@ -38,8 +40,8 @@ public class SteppeBehavior : MonoBehaviour {
             float lerp = elapsedTime / blendDuration;
             rend.material.Lerp(OffMaterial, OnMaterial, lerp);
             elapsedTime += Time.deltaTime;
-
-            yield return new WaitForEndOfFrame();
+            Debug.Log("elapsed time" + elapsedTime);
+            yield return null;
         }
     }
 }

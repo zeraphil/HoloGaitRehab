@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65123807558304530}
   - component: {fileID: 23549016221420964}
   - component: {fileID: 114924227698372938}
-  - component: {fileID: 54158336987659748}
+  - component: {fileID: 54035088438357386}
   m_Layer: 0
   m_Name: Steppe
   m_TagString: Untagged
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b2d75e2af6c91f845917eb2ef885f482, type: 2}
+  - {fileID: 2100000, guid: e1dcf759505f287449fc4bff9a175d2e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +85,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118120267642100}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54158336987659748
+--- !u!54 &54035088438357386
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -123,6 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6007bfe8992f83429f920f7bf822836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OffMaterial: {fileID: 2100000, guid: b2d75e2af6c91f845917eb2ef885f482, type: 2}
+  OffMaterial: {fileID: 2100000, guid: e1dcf759505f287449fc4bff9a175d2e, type: 2}
   OnMaterial: {fileID: 2100000, guid: 50cfc6e6b00a8414e820cf2dbe4f57f0, type: 2}
   blendDuration: 1
